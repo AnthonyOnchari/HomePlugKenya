@@ -135,7 +135,10 @@
         .logo span {
             color: var(--secondary);
         }
-        
+        .logo-img {
+    height: 50px; /* Adjust this value */
+    width: auto;
+} 
         /* Navigation */
         nav {
             display: flex;
