@@ -136,7 +136,7 @@
             color: var(--secondary);
         }
         .logo-img {
-    height: 50px; /* Adjust this value */
+    height: 80px; /* Adjust this value */
     width: auto;
 } 
         /* Navigation */
