@@ -593,7 +593,7 @@
         .stats {
             padding: 80px 0;
             background: linear-gradient(to right, var(--primary), #0d3a66);
-            color: var(--white);
+            color:white ;
         }
         
         .stats-grid {
