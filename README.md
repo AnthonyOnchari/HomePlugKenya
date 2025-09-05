@@ -14,3 +14,47 @@
                 </div>
             </div>
         </div>
+
+
+
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Plug Kenya - Premium Real Estate</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+       
+        <div class="container header-main">
+            <div class="logo">
+               <img src="https://i.postimg.cc/ZKscBXZ5/Home-Plug-Kenya-Logo-without-Background.png" alt="Home Plug Kenya Logo" class="logo-img">
+               <br>
+               <h1>Home<span>plug</span> Kenya</h1>
+            </div>
+
+            
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html" class="nav-link active" data-page="home">Home</a></li>
+                    <li><a href="/about.html" class="nav-link" data-page="about">About Us</a></li>
+                    <li><a href="/founders.html" class="nav-link" data-page="founders">Founders</a></li>
+                    <li><a href="/contact.html" class="nav-link" data-page="contact">Contact</a></li>
+                </ul>
+                <a href="#" class="whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i> WhatsApp Now
+                </a>
+            </nav>
+        </div>
+    </header>
