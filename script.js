@@ -27,6 +27,17 @@ navLinks.forEach(link => {
   }
 });
 
+
+// Mobile menu toggle
+const menuToggle = document.getElementById('menuToggle');
+const mainNav = document.getElementById('mainNav');
+
+menuToggle.addEventListener('click', () => {
+  menuToggle.classList.toggle('active');
+  mainNav.classList.toggle('active');
+});
+
+
             
             // Form submission handling
             const contactForm = document.querySelector('.contact-form form');
