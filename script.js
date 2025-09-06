@@ -11,19 +11,22 @@
                 this.classList.toggle('active');
             });
             
-            // Page navigation
-            
-                    
-                    // Close mobile menu after selection
-                    if (window.innerWidth <= 768) {
-                        mainNav.classList.remove('active');
-                        menuToggle.classList.remove('active');
-                    }
-                    
-                    // Scroll to top
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                });
-            });
+           // Highlight active navigation link based on current page
+const navLinks = document.querySelectorAll('.nav-link');
+
+// Get current page filename (e.g., "about.html")
+const currentPage = window.location.pathname.split("/").pop() || "index.html";
+
+navLinks.forEach(link => {
+  const linkPage = link.getAttribute('href');
+  
+  if (linkPage === currentPage) {
+    link.classList.add('active');
+  } else {
+    link.classList.remove('active');
+  }
+});
+
             
             // Form submission handling
             const contactForm = document.querySelector('.contact-form form');
