@@ -12,24 +12,7 @@
             });
             
             // Page navigation
-            navLinks.forEach(link => {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    
-                    // Get the target page
-                    const targetPage = this.getAttribute('data-page');
-                    
-                    // Update active navigation link
-                    navLinks.forEach(navLink => navLink.classList.remove('active'));
-                    this.classList.add('active');
-                    
-                    // Show the target page and hide others
-                    pageContents.forEach(page => {
-                        page.classList.remove('active');
-                        if (page.id === targetPage) {
-                            page.classList.add('active');
-                        }
-                    });
+            
                     
                     // Close mobile menu after selection
                     if (window.innerWidth <= 768) {
