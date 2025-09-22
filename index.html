@@ -1,275 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Properties - Home Plug Kenya</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Plug Kenya - Real Estate Properties</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header Top -->
-            <div class="social-icons">
-                <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-        </div>
-    </div>
 
-    <!-- Header Section -->
-    <header>
-       
-        <div class="container header-main">
-            <div class="logo">
+
+<!-- Header -->
+<header class="site-header">
+  <div class="container header-main">
+    <div class="logo">
                <img src="https://i.postimg.cc/ZKscBXZ5/Home-Plug-Kenya-Logo-without-Background.png" alt="Home Plug Kenya Logo" class="logo-img">
                <br>
                <h1>Home<span>plug</span> Kenya</h1>
             </div>
 
-            
-            <div class="menu-toggle" id="menuToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            
-            <nav id="mainNav">
-                <ul>
-                    <li><a href="index.html" class="nav-link active" data-page="home">Home</a></li>
-                    <li><a href="/about.html" class="nav-link" data-page="about">About Us</a></li>
-                    <li><a href="/founders.html" class="nav-link" data-page="founders">Founders</a></li>
-                    <li><a href="/contact.html" class="nav-link" data-page="contact">Contact</a></li>
-                </ul>
-                <a href="#" class="whatsapp-btn">
-                    <i class="fab fa-whatsapp"></i> WhatsApp Now
-                </a>
-            </nav>
-        </div>
-    </header>
 
-    <!-- Home Page -->
-    <div id="home" class="page-content active">
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="container hero-content">
-                <h2>From Bedsitters To Big Homes</h2>
+    <button type="button" class="menu-toggle" id="menuToggle" aria-label="Menu">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <nav id="mainNav" class="main-nav">
+      <ul class="nav-list">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="https://wa.me/254788610499" target="_blank" rel="noopener" class="btn whatsapp-cta" title="Chat with us on WhatsApp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h2>From Bedsitters To Big Homes</h2>
                 <p>Tunakuconnect na Keja za Bei Yako!!! — whether you’re buying, selling, or renting, we make it simple and stress-free.”</p>
-                <a href="/Properties.html" class="btn">Explore Properties</a>
-            </div>
-        </section>
+    <div class="hero-buttons">
+      <a href="services.html" class="btn">Explore Properties</a>
+      <a href="https://wa.me/254788610499" target="_blank" rel="noopener" class="btn"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+    </div>
+  </div>
+</section>
 
-        <!-- Featured Properties Section -->
-        <section class="properties">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Our Leading Properties</h2>
-                    <p>The best selection of premium properties across Kenya</p>
-                </div>
-                <div class="property-grid">
-                    <div class="property-card">
-                        <div class="property-img">
-                            <img src="/assets/images/001 bedsitter.jpeg" alt="Luxury Villa">
-                        </div>
-                        <div class="property-info">
-                            <h3>Spacious Bedsitters / Single Rooms</h3>
-                            <span class="date">From as Low as 2500 - 15k</span>
-                            <p>Spacious bedsitters offering comfort, privacy, and convenience in a modern open-plan design, tailored to fit your lifestyle.</p>
-                            <a href="#" class="btn">View Details</a>
-                        </div>
-                    </div>
-                    <div class="property-card">
-                        <div class="property-img">
-                            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-842760077320924857/original/3be719fb-7d64-4ff8-9b00-c1d5caf521c8.jpeg?im_w=720" alt="Apartment">
-                        </div>
-                        <div class="property-info">
-                            <h3>Prime Corporate Spaces/ BnB for Let</h3>
-                            <span class="date">From as Low as 1500 - 20k</span>
-                            <p>Affordable corporate spaces, shops, and BnBs available — ideal for work, stay, or business.Dont allow to go for anything while we are around</p>
-                            <a href="#" class="btn">View Details</a>
-                        </div>
-                    </div>
-                    <div class="property-card">
-                        <div class="property-img">
-                            <img src="/assets/images/001 familyhouse.jpg " alt="Modern House">
-                        </div>
-                        <div class="property-info">
-                            <h3>Dream House Rentals Plus Best Rates</h3>
-                            <span class="date">From as Low as 7500 - 75k</span>
-                            <p>A spacious modern family home combining comfort, convenience, and elegance — perfect for practical yet stylish living.</p>
-                            <a href="#" class="btn">View Details</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Stats Section -->
-    <section class="stats">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <h3>500+</h3>
-                    <p>Properties Listed</p>
-                </div>
-                <div class="stat-item">
-                    <h3>250+</h3>
-                    <p>Happy Clients</p>
-                </div>
-                <div class="stat-item">
-                    <h3>15+</h3>
-                    <p>Years Experience</p>
-                </div>
-                <div class="stat-item">
-                    <h3>98%</h3>
-                    <p>Client Satisfaction</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-        <!-- Testimonials Section -->
-        <section class="testimonials">
-            <div class="container">
-                <div class="section-title">
-                    <h2>What Our Clients Say</h2>
-                    <p>Hear from our satisfied customers</p>
-                </div>
-                <div class="testimonial-slider">
-                    <div class="testimonial">
-                        <p class="testimonial-text">"We had an amazing experience working with this team. They made buying our first home smooth and stress-free. Highly recommended!"</p>
-                        <p class="testimonial-author">- Michael & Vivian Kariuki</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+<!-- Featured Properties -->
+<section class="properties">
+  <div class="container">
+    <div class="section-title">
+      <h2>Our Featured Properties</h2>
+      <p>Handpicked listings to match every lifestyle and budget</p>
     </div>
 
-
-    <!-- Founders Page -->
-    <div id="founders" class="page-content">
-        
+    <div class="property-grid">
+      <div class="property-card">
+        <img src="001 bedsitter.jpeg" alt="Bedsitter">
+        <h3>Bedsitters & Single Rooms</h3>
+        <span class="price">From Ksh 2,500 - 15,000</span>
+        <p>Affordable and modern designs, offering privacy and convenience.</p>
+        <a href="#" class="btn">View Details</a>
+      </div>
+      <div class="property-card">
+        <img src="002 bedsitter.jpg" alt="Corporate Spaces">
+        <h3>Corporate Spaces & BnBs</h3>
+        <span class="price">From Ksh 1,500 - 20,000</span>
+        <p>Prime office spaces and short stays tailored for work and leisure.</p>
+        <a href="#" class="btn">View Details</a>
+      </div>
+      <div class="property-card">
+        <img src="001 familyhouse.jpg" alt="Family Home">
+        <h3>Family Homes</h3>
+        <span class="price">From Ksh 7,500 - 75,000</span>
+        <p>Spacious, elegant, and affordable homes for growing families.</p>
+        <a href="#" class="btn">View Details</a>
+      </div>
     </div>
+  </div>
+</section>
 
-    <!-- Contact Page -->
-    <div id="contact" class="page-content">
-        <section class="contact">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Contact Us</h2>
-                    <p>Get in touch with our dedicated team</p>
-                </div>
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div>
-                                <h3>Our Office</h3>
-                                <p>Nairobi, Kenya</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div>
-                                <h3>Phone</h3>
-                                <p>+254788610499</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div>
-                                <h3>Email</h3>
-                                <p>info@homeplugkenya.co.ke</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-clock"></i>
-                            </div>
-                            <div>
-                                <h3>Business Hours</h3>
-                                <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
-                                <p>Saturday: 10:00 AM - 4:00 PM</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-globe"></i>
-                            </div>
-                            <div>
-                                <h3>Website</h3>
-                                <p>www.homeplugkenya.co.ke</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contact-form">
-                        <h3>Send us a Message</h3>
-                        <form>
-                            <div class="form-group">
-                                <label for="name">Your Name</label>
-                                <input type="text" id="name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Your Email</label>
-                                <input type="email" id="email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="subject">Subject</label>
-                                <input type="text" id="subject" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Your Message</label>
-                                <textarea id="message" required></textarea>
-                            </div>
-                            <button type="submit" class="btn">Send Message</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
+<!-- Stats -->
+<section class="stats" id="stats">
+  <div class="container stats-grid">
+    <div class="stat-item"><h3 class="count" data-target="500">0</h3><p>Properties Listed</p></div>
+    <div class="stat-item"><h3 class="count" data-target="250">0</h3><p>Happy Clients</p></div>
+    <div class="stat-item"><h3 class="count" data-target="15">0</h3><p>Years Experience</p></div>
+    <div class="stat-item"><h3 class="count" data-target="98">0</h3><p>Client Satisfaction (%)</p></div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonial-section">
+  <h2>What Our Clients Say</h2>
+  <div class="carousel">
+    <div class="testimonial active"><p>“Home Plug Kenya helped me find the perfect family home in just two weeks!”</p><div class="author">— Sarah Johnson</div></div>
+    <div class="testimonial"><p>“Professional service and transparent deals. Highly recommended.”</p><div class="author">— Daniel Kim</div></div>
+    <div class="testimonial"><p>“Best experience buying land, smooth process and trustworthy team.”</p><div class="author">— Maria Lopez</div></div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="cta-container">
+    <h2>Ready to Own Your Dream Property?</h2>
+    <p>Let Home Plug Kenya guide you to the perfect investment today.</p>
+    <a href="contact.html" class="cta-btn">Get Started</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <h3>Home Plug Kenya</h3>
+      <p>Your trusted real estate partner in Kenya, providing premium properties and exceptional service.</p>
     </div>
+    <div class="footer-column">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>Contact Info</h4>
+      <ul>
+        <li><i class="fas fa-phone"></i> +254 788 610 499</li>
+        <li><i class="fas fa-envelope"></i> info@homeplugkenya.co.ke</li>
+        <li><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Home Plug Kenya | Powered by Anthony Onchari</p>
+  </div>
+</footer>
 
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <h3>Home Plug Kenya</h3>
-                    <p>Your trusted real estate partner in Kenya, providing premium properties and exceptional service.</p>
-                </div>
-                <div class="footer-column">
-                    <h3>Quick Links</h3>
-                    <ul class="footer-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="founders.html">Founders</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Contact Info</h3>
-                    <ul class="footer-links">
-                        <li><i class="fas fa-phone"></i> +254788610499</li>
-                        <li><i class="fas fa-envelope"></i> info@homeplugkenya.co.ke</li>
-                        <li><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="copyright">
-                <p>Copyright © 2025 Home Plug Kenya | Powered by Anthony Onchari</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

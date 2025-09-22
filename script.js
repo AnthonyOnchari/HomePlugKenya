@@ -1,51 +1,74 @@
- // Navigation and Page Switching
-        document.addEventListener('DOMContentLoaded', function() {
-            const menuToggle = document.getElementById('menuToggle');
-            const mainNav = document.getElementById('mainNav');
-            const navLinks = document.querySelectorAll('.nav-link');
-            const pageContents = document.querySelectorAll('.page-content');
-            
-            // Mobile menu toggle
-            menuToggle.addEventListener('click', function() {
-                mainNav.classList.toggle('active');
-                this.classList.toggle('active');
-            });
-            
-           // Highlight active navigation link based on current page
-const navLinks = document.querySelectorAll('.nav-link');
+// Mobile Menu Toggle
+const menuToggle = document.getElementById("menuToggle");
+const navList = document.querySelector(".nav-list");
 
-// Get current page filename (e.g., "about.html")
-const currentPage = window.location.pathname.split("/").pop() || "index.html";
+menuToggle.addEventListener("click", () => {
+  navList.classList.toggle("show");
+});
 
-navLinks.forEach(link => {
-  const linkPage = link.getAttribute('href');
-  
-  if (linkPage === currentPage) {
-    link.classList.add('active');
-  } else {
-    link.classList.remove('active');
+// Stats Counter
+const counters = document.querySelectorAll(".count");
+let started = false;
+
+function startCount() {
+  counters.forEach(counter => {
+    const target = +counter.getAttribute("data-target");
+    let count = 0;
+    const increment = target / 200;
+
+    function updateCount() {
+      count += increment;
+      if (count < target) {
+        counter.textContent = Math.floor(count);
+        requestAnimationFrame(updateCount);
+      } else {
+        counter.textContent = target;
+      }
+    }
+    updateCount();
+  });
+}
+
+window.addEventListener("scroll", () => {
+  const stats = document.querySelector("#stats");
+  const pos = stats.getBoundingClientRect().top;
+  const screenPos = window.innerHeight;
+  if (pos < screenPos && !started) {
+    startCount();
+    started = true;
   }
 });
 
+// Testimonials Carousel
+const testimonials = document.querySelectorAll(".testimonial");
+let index = 0;
 
-// Mobile menu toggle
-const menuToggle = document.getElementById('menuToggle');
-const mainNav = document.getElementById('mainNav');
+function showTestimonial(i) {
+  testimonials.forEach((t, idx) => {
+    t.classList.remove("active");
+    if (idx === i) t.classList.add("active");
+  });
+}
 
-menuToggle.addEventListener('click', () => {
-  menuToggle.classList.toggle('active');
-  mainNav.classList.toggle('active');
-});
+function nextTestimonial() {
+  index++;
+  if (index >= testimonials.length) index = 0;
+  showTestimonial(index);
+}
+
+setInterval(nextTestimonial, 3000);
+showTestimonial(index);
 
 
-            
-            // Form submission handling
-            const contactForm = document.querySelector('.contact-form form');
-            if(contactForm) {
-                contactForm.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    alert('Thank you for your message! We will get back to you soon.');
-                    this.reset();
-                });
-            }
-        });
+// Reveal on scroll
+const revealElements = document.querySelectorAll('.fade-in, .fade-up');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.2 });
+
+revealElements.forEach(el => observer.observe(el));
